@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import logo from "../burntot/FB_IMG_1586272040225.jpg";
 import FormComponent from "../components/form";
