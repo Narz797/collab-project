@@ -5,6 +5,8 @@ import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./assets/pages/home";
 import Login from "./assets/pages/login";
+import NotFound from "./assets/pages/notFound";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -13,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/Login" element={<Login />} />
         </Route>
         <Route path="/Home" element={<Home />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

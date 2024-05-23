@@ -2,6 +2,7 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import logo from "../burntot/FB_IMG_1586272040225.jpg";
 import FormComponent from "../components/form";
 import ButtonComponent from "../components/buttons";
+import ImageComponent from "../components/ImageRounds";
 
 export default function Home() {
   return (
@@ -10,13 +11,8 @@ export default function Home() {
         <Col
           md={4}
           lg={3}
-          className="d-flex justify-content-center align-items-center mb-3 mb-md-0"
         >
-          <img
-            src={logo}
-            alt="Logo"
-            style={{ width: "150px", height: "150px" }} // Adjust the size as needed
-          />
+          <ImageComponent source={logo} shape={"roundedCircle"}/>
         </Col>
         <Col md={8} lg={6}>
           <div className="d-flex align-items-center mb-3">
