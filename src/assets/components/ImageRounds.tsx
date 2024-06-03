@@ -4,13 +4,13 @@ import Image from "react-bootstrap/Image";
 
 interface ImagesProps {
   source: string;
-  shape?: "rounded" | "roundedCircle" | "thumbnail";
+  shape?: "rounded" | "roundedSquare" | "thumbnail";
 }
 
 const ShapeImages: React.FC<ImagesProps> = ({ source, shape }) => {
   const shapeClass =
-    shape === "roundedCircle"
-      ? "rounded-circle"
+    shape === "roundedSquare"
+      ? "rounded-square"
       : shape === "thumbnail"
       ? "img-thumbnail"
       : "rounded";
@@ -20,7 +20,7 @@ const ShapeImages: React.FC<ImagesProps> = ({ source, shape }) => {
       <Image
         src={source}
         className={`img-fluid ${shapeClass}`}
-        style={{ maxWidth: "150px" }}
+        style={{ maxWidth: "190px" }}
       />
     </Container>
   );

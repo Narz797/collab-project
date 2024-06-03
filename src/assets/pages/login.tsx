@@ -1,5 +1,6 @@
 import { Container, Row, Col, Form } from "react-bootstrap";
-import logo from "../burntot/FB_IMG_1586272040225.jpg";
+import logo from "../burntot/pic.jpg";
+import under_img from "../burntot/burn.jpg";
 import FormComponent from "../components/form";
 import ButtonComponent from "../components/buttons";
 import ImageComponent from "../components/ImageRounds";
@@ -12,7 +13,7 @@ export default function Home() {
           md={4}
           lg={3}
         >
-          <ImageComponent source={logo} shape={"roundedCircle"}/>
+          <ImageComponent source={logo}/>
         </Col>
         <Col md={8} lg={6}>
           <div className="d-flex align-items-center mb-3">
@@ -27,6 +28,10 @@ export default function Home() {
               labelName="Submit"
             />
           </Form>
+          
+        </Col>
+        <Col>
+        <ImageComponent source={under_img} shape={"roundedSquare"}/>
         </Col>
       </Row>
     </Container>
